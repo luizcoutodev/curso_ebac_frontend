@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 15px 40px;
+    background-color: rgba(78, 88, 223, 0.76);
+    color: antiquewhite;
+    font-size: 22px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 11px;
+    font-size: 20px;
+}
+
+header nav li a { /* para alterar o texto do a precisa selecionar o a aqui, se não, não mudará a cor. */
+    display: inline;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
