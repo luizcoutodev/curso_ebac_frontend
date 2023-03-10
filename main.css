@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+}
+
 header {
     padding: 15px 40px;
-    background-color: rgba(78, 88, 223, 0.76);
-    color: antiquewhite;
+    background-color: #2F3C7E;
+    color: #FBEAEB;
     font-size: 22px;
+    font-family: 'Secular One', sans-serif;
+}
+
+header h1, section h2 {
+    font-weight: normal;
+    font-family: 'Secular One', sans-serif;
 }
 
 header nav li {
@@ -18,19 +30,51 @@ header nav li {
 }
 
 header nav li a { /* para alterar o texto do a precisa selecionar o a aqui, se não, não mudará a cor. */
-    display: inline;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
+header li a:hover{
+    text-decoration: underline;
+}
+
 .container {
-    max-width: 1280;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
 
-header .container {
+header .container, section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+.brands-list img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 14px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-img {
+    margin-right: 30px
 }
