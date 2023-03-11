@@ -14,11 +14,11 @@ header {
     padding: 15px 40px;
     background-color: #2F3C7E;
     color: #FBEAEB;
-    font-size: 22px;
+    font-size: 28px;
     font-family: 'Secular One', sans-serif;
 }
 
-header h1, section h2 {
+header h1, h2, h3 {
     font-weight: normal;
     font-family: 'Secular One', sans-serif;
 }
@@ -26,7 +26,7 @@ header h1, section h2 {
 header nav li {
     display: inline;
     margin-left: 11px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 header nav li a { /* para alterar o texto do a precisa selecionar o a aqui, se não, não mudará a cor. */
@@ -77,4 +77,51 @@ section p {
 
 .store-img {
     margin-right: 30px
+}
+
+.social-links img{
+    height: 24px;
+    margin-right: 8px;
+}
+
+.social-links li{
+    display: inline;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    background-color: #2F3C7E;
+    color: #FBEAEB;
+}
+
+form button:hover{
+    background-color: #4051a7;
+}
+
+#contact h3{
+    margin-bottom: 8px;
 }
