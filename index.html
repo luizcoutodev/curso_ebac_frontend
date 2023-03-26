@@ -12,11 +12,15 @@
 </head>
 <body>
     <div class="container">
-        <h1> Digite dois números abaixo para descobrir se B é maior que A: </h1>
+        <h1> Digite dois números abaixo: </h1>
+        <h2>O número B <strong>DEVE</strong> ser maior que o número A</h2>
         <form id="formulario">
             <input type="number" id="numero-A"  required placeholder="Digite o valor de A"  />
             <input type="number" id="numero-B"  required placeholder="Digite o valor de B"/>
+            <p class="error-message"> O valor de B é menor que A </p>
+            <p class="success-message"> Correto! O valor de B é maior que A </p>
             <button type="submit"> ENVIAR </button>
+            
         </form>
     </div>
     <script src="/main.js"></script>

@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-h1,h2 {
+h1,h2,h3 {
     font-weight: normal;
     font-family: 'Secular One', sans-serif;
 }
 
-form input, form button {
+form input, form button, p {
     font-family: 'Roboto', sans-serif;;
 }
 
@@ -49,4 +49,26 @@ form {
 
 button:hover {
     background-color:  rgb(129, 167, 74);
+}
+
+.error-message {
+    background-color: red;
+    padding: 6px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    outline: auto;
+    outline-color: black;
+    display: none;
+}
+
+.success-message {
+    background-color:rgb(129, 167, 74);
+    padding: 6px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    outline: auto;
+    outline-color: black;
+    display: none;
 }
