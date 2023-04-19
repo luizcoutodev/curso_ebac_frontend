@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, form input, form button {
+    font-family: 'Secular One', sans-serif;
+}
+
+body {
+    background-color: rgb(238, 237, 235);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.container{ /* primeira coisa a ser feita */
+    margin: 200px auto; /* isso faz centralizar na página */
+    max-width: 640px; /* limita a pagina e com o auto acima ele centraliza */
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    word-break:break-all;
+  }
+
+  form input, form button {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+ul {
+    padding: 0;
+}
+
+ul li {  
+    list-style-position:inside; 
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
