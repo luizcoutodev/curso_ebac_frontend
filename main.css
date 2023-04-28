@@ -1,54 +1,51 @@
 *{
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-body, form input, form button {
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: rgb(238, 237, 235);
+    background-color: rgb(62, 58, 112) ;
+    color: white;
 }
 
-h3 {
-    font-size: 16px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    
-}
-
-h1 {
-    margin-bottom: 5px;
-}
-
-.container{ /* primeira coisa a ser feita */
-    margin: 200px auto; /* isso faz centralizar na página */
-    max-width: 640px; /* limita a pagina e com o auto acima ele centraliza */
-    width: 100%;
+header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 7px;
     text-align: center;
-    flex-wrap: wrap;
-    word-break:break-all;
-  }
-
-  form input, form button {
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
 }
 
-
-ul {
-    padding: 0;
+.container {
+    max-width: 640px;
+    width: 100%;
+    margin: 200px auto;
 }
 
-ul li {  
-    list-style-position:inside; 
+.form-campo input {
+    display: block;
+    padding: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-campo label {
     font-size: 20px;
-    font-weight: lighter;
-    cursor: pointer;
 }
 
 button {
+    display: block;
+    padding: 8px;
+    width: 50%;
+    margin: auto;
+    border: none;
+    background-color: #20d882;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
     cursor: pointer;
+    border-radius: 6px;
 }
