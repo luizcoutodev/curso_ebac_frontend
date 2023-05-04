@@ -1,26 +1,37 @@
-$('form button').click(function(e){
-    adicionarTarefa();
-    e.preventDefault();
+$('#cpf').mask('000.000.000-00')
+
+$('#cep').mask('00000-000');
+
+$('#telefone').mask('(00) 00000-0000');
+
+$('form').validate({
+    rules: {
+        nome: {
+            required:true
+        },
+        email: {
+            required: true
+        },
+        telefone: {
+            required: true
+        },
+        cpf: {
+            required: true
+        },
+        endereço: {
+            required: true
+        },
+        cep: {
+            required: true
+        }
+    },
+    messages: {
+        nome: ' Por favor, insira seu nome',
+        email: 'Por favor, insira seu e-mail.',
+        cpf: 'Por favor, insira seu cpf.',
+        endereço: 'Por favor, insira seu endereço.',
+        cep: 'Por favor, insira seu CEP.',
+        telefone: 'Por favor, insira seu telefone.',
+    } 
 })
 
-function adicionarTarefa(){
-    const inputTarefa = $('#nome-tarefa').val();
-    const novaTarefa = $(`<li style="display:none">${inputTarefa}</li>`);
-    
-    if (inputTarefa.length == 0) {
-        alert("A tarefa está em branco.")
-    } else {
-        $(novaTarefa).appendTo('ul');
-        $(novaTarefa).fadeIn(1500);
-    }
-    $('#nome-tarefa').val(''); 
-}
-
-$('ul').on('click','li', function(){ /* função ON é atribuida até a novos elementos adicionadas a pagina, a função .click é apenas as que ja estão na pagina ao iniciar. */
-    $(this).css('text-decoration','line-through');
-})
-
-
-$('ul').on('dblclick', 'li', function(){
-    $(this).css('text-decoration','none');
-})
