@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    border-bottom: 2px solid blue;
+    padding-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    background-color: beige;
+    justify-content: space-between;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    margin-bottom: 20px;
+}    
+
+
+
+.menu-div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header ul li {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sobre {
+    /* background-color: blue; */
+    width:70%;
+    background-color: white;
+}
+
+.sobre-loja {
+    padding-top: 0;
+    margin-left: 20px;
+}
+
+.sobre img {
+    height: 250px;
+}
+
+.sobre-loja p {
+    margin-top: 20px;
+}
+
+.menu-div a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+}
+
+
+.produto {
+    display: block;
+}
+
+.produto img {
+   width: 100%;
+   height: 400px;
+    margin-bottom: 5px;
+}
+
+.produto h3 {
+    text-align: justify;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.produto p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.produto button {
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: #005b96;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 24.3%);
+    column-gap: 1%;
+    row-gap: 3%;
+}
+
+
