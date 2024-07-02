@@ -1,15 +1,16 @@
 {
-  "name": "curso_ebac_frontend",
+  "name": "exercicio-ecma",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "exercicio.js",
   "scripts": {
-    "sass": "sass",
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "build": "babel src --watch -d dist"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.65.1"
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7"
   }
 }
